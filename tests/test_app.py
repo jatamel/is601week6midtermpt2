@@ -1,8 +1,8 @@
 import pytest
 
 from app import App
-
 def test_app_get_environment_variable():
+    """test that the program starts the correct environment"""
     app = App()
 #   Retrieve the current environment setting
     current_env = app.get_environment_variable('ENVIRONMENT')
