@@ -27,8 +27,8 @@ def test_app_start_unknown_command(capfd, monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
 
     app = App()
-    
-    with pytest.raises(SystemExit) as excinfo:
+    #as excinfo
+    with pytest.raises(SystemExit):
         app.start()
     
     # Optionally, check for specific exit code or message
